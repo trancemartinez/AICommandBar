@@ -9,10 +9,14 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+class Customer {
+    var name: String
+    var email: String
     var timestamp: Date
-    
-    init(timestamp: Date) {
+
+    init(name: String, email: String, timestamp: Date) {
+        self.name = name
+        self.email = email
         self.timestamp = timestamp
     }
 }
